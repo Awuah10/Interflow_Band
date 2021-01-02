@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+
+<div class="row">
+<section class="white col s12 m12 l8 offset-l3">
+<div class="row">
+    <div class="col s12 l10 offset-l1">
+        <h5 class="brown-text text-darken-4 writing center">Want to be a part of the team, tell us more about yourself.</h5>
+        
+    </div>
+     <div class="col s12 l10 offset-l1 ">
+
+         <form action="/join" class="request" method="POST">
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <input type="text" id="name" name="name" required> 
+            <label for="name">Your  Name</label>
+        </div>
+             <div class="input-field">
+                 <i class="material-icons prefix">email</i>
+                 <input type="email" id="email" name="email" required> 
+                 <label for="email">Your  Email</label>
+             </div>
+             <div class="input-field">
+                <i class="material-icons prefix">phone</i>
+                <input type="tel" id="phone" name="phone" required> 
+                <label for="phone">Your  Contact number</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="message" class="materialize-textarea" name="reason" required></textarea>
+                <label for="message">Why do you want to join the Interflow crew?</label>
+            </div>
+
+             <div class="input-field">
+                 <textarea id="message" class="materialize-textarea" name="experience" required></textarea>
+                 <label for="message">Any singing or band experience?</label>
+             </div>
+
+             <div class="input-field">
+                <textarea id="message" class="materialize-textarea" name="rehearsal_times" required></textarea>
+                <label for="message">How often do you rehearse? (i.e. personally or with a group)</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="message" class="materialize-textarea" name="social_media" required></textarea>
+                <label for="message">Your social media handles</label>
+            </div>
+
+             <div class="input-field center ">
+                <button class="btn waves-effect waves-light brown" type="submit" name="action">Send Request
+                    <i class="material-icons right">send</i>
+                  </button>
+             </div>
+         </form>
+     </div>
+</div>
+</section>
+
+
+<%- include('partials/footer') %>

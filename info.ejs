@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="container center">
+    <div class="row">
+    <% if( notificationMessage.failure === " "){ %> 
+        <div class="card-panel white z-depth-5  col s12 m12 l8 offset-l3">
+            <h5 class="writing green-text"><%= notificationMessage.success %> </h5>
+            <h6 class="center"><a href="/" class="writing green-text"><i class="Tiny material-icons green-text ">home</i>Back</a></h6>
+         </div> 
+    
+    <% }else{ %> 
+        <div class="card-panel white z-depth-5  col s12 m12 l8 offset-l3">
+        <h5 class="writing red-text "><%= notificationMessage.failure %> </h5>
+        <h6 class="center"><a href="/" class="writing red-text"><i class="Tiny material-icons red-text ">home</i>Back</a></h6>
+    </div>
+    <% } %> 
+    </div>
+   
+    </div>
+
+
+<%- include('partials/footer') %>
+
